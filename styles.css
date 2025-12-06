@@ -1,7 +1,6 @@
 /* Base */
 body {
   color: rgb(255, 255, 255);
-  font-family: "Inter";
 }
 
 
@@ -27,6 +26,7 @@ body {
   justify-content: start;
   align-items: end;
   padding-left: 10px;
+  font-family: "Inter";
 }
 
 .tab {
@@ -47,7 +47,8 @@ body {
 }
 .tab::after {
 	display : block;
-	content: "x";
+	content: "⨯";
+  font-size: 20px;
 }
 .tab:hover {
   background-color: darkgray;
@@ -81,12 +82,24 @@ a {
 	font-size: 20px;
 }
 	
-#else:hover{
+#clear:hover,#square:hover{
 	background-color: gray;
 }
 
 #croix:hover {
 	background-color: red;
+}
+
+#croix {
+  font-size: 23px;
+}
+#square {
+  padding-top: 7px;
+  font-size: 22px;
+}
+#clear {
+  padding-top: 7px;
+  font-size: 25px;
 }
 
 .content {
@@ -120,6 +133,7 @@ h2,h1 {
   bottom: 0px;
   color: gray;
   font-weight: bold;
+  font-family: "Inter";
 }
 #green {
   color: #279627;
@@ -140,4 +154,15 @@ h2,h1 {
 
 #git_logo:hover {
 	background-color: #000000;
+}
+
+#center {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 95%;
+}
+
+#title {
+  font-size: 80px;
 }
